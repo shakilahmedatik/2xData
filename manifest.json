@@ -1,0 +1,23 @@
+{
+  "name": "2xData",
+  "description": "An extension for manipulating table data of an E-commerce website.",
+  "version": "1.0.0",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "./assets/logo-192x192.png",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.netlify.app/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "manifest_version": 2,
+  "icons": {
+    "16": "./assets/logo-16x16.png",
+    "32": "./assets/logo-32x32.png",
+    "48": "./assets/logo-192x192.png",
+    "192": "./assets/logo-192x192.png"
+  }
+}
